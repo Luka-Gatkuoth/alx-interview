@@ -5,18 +5,18 @@
 def canUnlockAll(boxes):
     """
     take boxes
-        create set of key
+        create set of keys
             go to box0
-                get all keys and add them setofkeys
+                get all keys and add them setofkey
             start opening boxes from setofkeys
                 go to each box of each key
                     and take the keys from it and add them to set of keys
-                keep loping through all setof keys
-            ignore key that dont have box
+                keep loping through all setof key
+            ignore keys that dont have box
             track opening of boxes by a counter, if at end it
             equal to lentgh of boxes it mean all boxes unlock
             OPTIMIZE IDEA :
-                if we add 0 to setofkey at start, we dont need for in 23
+                if we add 0 to setofkeys at start, we dont need for in 23
     """
     total_boxes = len(boxes)
     setofkeys = [0]
@@ -32,4 +32,3 @@ def canUnlockAll(boxes):
         index += 1
 
     return counter == total_boxes - 1
-
