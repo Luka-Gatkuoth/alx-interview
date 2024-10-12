@@ -32,3 +32,4 @@ def canUnlockAll(boxes):
         index += 1
 
     return counter == total_boxes - 1
+
